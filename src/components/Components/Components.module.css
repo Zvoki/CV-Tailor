@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  padding: 88px 24px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.heading {
+  max-width: 700px;
+  margin: 0 auto 42px;
+  color: #183a32;
+  font-size: clamp(30px, 4vw, 42px);
+  letter-spacing: -1.4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: 30px 26px;
+  border: 1px solid #e4ebe5;
+  border-radius: 14px;
+  background: #fbfcfa;
+}
+
+.icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e2f3e6;
+  color: #176247;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.title {
+  margin-bottom: 10px;
+  color: #183a32;
+  font-size: 20px;
+}
+
+.text {
+  color: #5a6962;
+  font-size: 16px;
+  line-height: 1.65;
+}
